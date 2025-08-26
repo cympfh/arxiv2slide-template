@@ -1,0 +1,8 @@
+{
+  "arxiv_id": "2508.01191v3",
+  "init_git": true,
+  "__prompts__": {
+    "arxiv_id": "ArXiv ID of the paper",
+    "init_git": "Initialize a git repository"
+  }
+}

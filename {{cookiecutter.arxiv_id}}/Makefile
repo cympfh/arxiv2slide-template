@@ -3,15 +3,17 @@ build: slide.html
 %.html: %.md
 	marp $< -o $@
 
+CLAUDE := claude
 claude: .claude/init .claude/slide .claude/suikou
-claude-suikou: .claude/suikou
 
 .claude/init:
-	$(CLAUDE) -p "/init 日本語で書いて" --permission-mode acceptEdits
+	$(CLAUDE) -p "/init" --permission-mode acceptEdits
+	mkdir -p .claude
 	touch .claude/init
 
 .claude/slide:
 	$(CLAUDE) -p "TODO.md に従い slide.md を書きあげよ" --permission-mode acceptEdits
+	mkdir -p .claude
 	touch .claude/slide
 
 .claude/suikou:

@@ -75,13 +75,13 @@ style: |
   }
 ---
 
-# {{ TITLE }}
+# ${TITLE}
 
-**著者**: {{ AUTHORS }}
+**著者**: ${AUTHORS}
 
-**所属**: {{ AFFILIATIONS }}
+**所属**: ${AFFILIATIONS}
 
-**論文**: {{ arXiv:****.*****v1 [cs.IR] 25 Jul YYYY }}
+**論文**: ${arXiv:****.*****v1 [cs.**] 25 Jul YYYY}
 
 ---
 
